@@ -1,0 +1,15 @@
+name: 'SimpleMarkdownAction'
+author: '@closebracket'
+description: 'A simple markdown action which manages complex text'
+inputs:
+  directory: 
+    description: "All of the directories in the repo"
+    required: true
+    default: "templates"
+  template:
+    description: "The template to use"
+    required: true
+    default: "contents.md"
+runs:
+  using: 'node16'
+  main: 'index.js'
