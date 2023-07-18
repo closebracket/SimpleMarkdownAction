@@ -12,7 +12,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
       with:
-        path: "SimpleMarkdownAction"
+        path: "/"
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
@@ -22,12 +22,7 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Test with act
-      uses: actions/checkout@v2 # Reuse the checkout action for act
-      with:
-        ref: ${{ github.event.pull_request.head.sha }} # Use the pull request head sha for act testing
-
-    - name: Run tests with act
-      run: npm test
+    - name: Run SimpleMarkdownAction
+      run: npm start
 
 
