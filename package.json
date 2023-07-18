@@ -1,4 +1,22 @@
 {
+  "name": "simplemarkdownaction",
+  "version": "0.0.1",
+  "description": "A simple markdown tool using github actions to update markdown files with defined templates after a commit has been made to a repository.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "act workflow_dispatch"
+  },
+  "author": "Edward Charles",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/closebracket/SimpleMarkdownAction"
+  },
+  "bugs": {
+    "url": "https://github.com/closebracket/SimpleMarkdownAction/issues"
+  },
+  "homepage": "https://github.com/closebracket/SimpleMarkdownAction",
   "dependencies": {
     "@actions/artifact": "^1.1.1",
     "@actions/core": "^1.10.0",
