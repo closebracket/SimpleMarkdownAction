@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "act workflow_dispatch",
+    "test": "act workflow_dispatch"
   },
   "author": "Edward Charles",
   "license": "GPL-3.0-or-later",
